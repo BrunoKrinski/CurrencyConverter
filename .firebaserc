@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "currencyconverter-30b8b",
+    "prod": "currencyconverter-30b8b"
+  },
+  "targets": {},
+  "etags": {}
+}
