@@ -8139,7 +8139,7 @@ Dr:function Dr(a){this.a=a},
 acy(){var s=0,r=A.Z(t.f),q,p
 var $async$acy=A.a_(function(a,b){if(a===1)return A.W(b,r)
 while(true)switch(s){case 0:s=3
-return A.a6(A.azg(A.nG("https://api.hgbrasil.com/finance?key=e6dd5371")),$async$acy)
+return A.a6(A.azg(A.nG("https://api.hgbrasil.com/finance?format=json-cors&key=e6dd5371")),$async$acy)
 case 3:p=b
 q=B.bB.di(0,A.az1(A.ax1(p.e).c.a.h(0,"charset")).di(0,p.w))
 s=1

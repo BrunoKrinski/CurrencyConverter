@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 
 Future<Map> getData() async {
   // const request = "http://api.hgbrasil.com/finance?format=json&key=e6dd5371";
-  const request = "https://api.hgbrasil.com/finance?key=e6dd5371";
+  const request = "https://api.hgbrasil.com/finance?format=json-cors&key=e6dd5371";
 
   http.Response response = await http.get(Uri.parse(request));
   return json.decode(response.body);
