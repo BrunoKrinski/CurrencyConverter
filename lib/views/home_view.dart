@@ -20,7 +20,13 @@ class HomeView extends StatefulWidget {
 
 class _HomeViewState extends State<HomeView> {
 
-  final Future<Map> data = getData();
+  Future<Map>? data;
+
+  @override
+  void initState() {
+    super.initState();
+    data = getData();
+  }
 
   double? dolar;
   double? euro;
