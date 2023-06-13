@@ -20,7 +20,7 @@ class HomeView extends StatefulWidget {
 
 class _HomeViewState extends State<HomeView> {
 
-  late final Future<Map> data;
+  final Future<Map> data = getData();
 
   double? dolar;
   double? euro;
@@ -143,7 +143,7 @@ class _HomeViewState extends State<HomeView> {
         centerTitle: true,
       ),
       body: FutureBuilder<Map>(
-        future: getData(),
+        future: data,
         builder: (context, snapshot) {
           switch (snapshot.connectionState) {
             case ConnectionState.waiting:
